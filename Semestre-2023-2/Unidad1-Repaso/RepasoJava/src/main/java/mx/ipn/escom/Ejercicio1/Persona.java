@@ -1,5 +1,7 @@
 package mx.ipn.escom.Ejercicio1;
 
+import mx.ipn.escom.Interfaces.Automovil;
+
 /**
  * ¡Recuerda! Una clase es solamente la plantilla que nos dicta
  * la estructura que debe tener nuestro objeto
@@ -62,6 +64,10 @@ public class Persona {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public void conducir(Automovil auto){
+        System.out.println(nombre + " esta conduciendo un " + auto.getMarca() + " a " + auto.getVelocidadMaxima() + "KM/H");
     }
 
     @Override
