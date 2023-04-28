@@ -40,4 +40,9 @@ public class ControladorLista {
         return respuesta;
     }
 
+    @PostMapping("/extra")
+    public ResponseEntity<Integer> mostrandoEntero(@RequestParam(name = "numero") Integer numero1,
+                                                   @RequestParam Integer numero2) {
+        return  new ResponseEntity<>(numero1+numero2,HttpStatus.OK);
+    }
 }
