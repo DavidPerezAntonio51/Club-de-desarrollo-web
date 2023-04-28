@@ -1,0 +1,15 @@
+{
+    "nombre":"David",
+    "apellido":"Pérez",
+    "direccion":{
+        "calle":"cda zacatecas"
+    },
+    "padres":[
+        {
+            "nombre":"David"
+        },
+        {
+            "Nombre":"Salvador"
+        }
+    ]
+}
