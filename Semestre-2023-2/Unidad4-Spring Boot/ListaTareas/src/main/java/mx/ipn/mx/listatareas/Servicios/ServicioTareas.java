@@ -1,5 +1,6 @@
 package mx.ipn.mx.listatareas.Servicios;
 
+import jakarta.annotation.PostConstruct;
 import mx.ipn.mx.listatareas.DTO.TareaDTO;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,10 @@ import java.util.List;
 @Service
 public class ServicioTareas {
     private List<TareaDTO> tareas = new ArrayList<>();
+    @PostConstruct
+    public void initTableSemestres(){
+
+    }
 
     public void guardarTarea(TareaDTO tarea){
         tareas.add(tarea);
